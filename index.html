@@ -6,141 +6,105 @@
     <title>Registration Form</title>
 </head>
 <body>
-    <!-- TODO: Create your form element here with action="#" and method="post" -->
-    
-        <!-- TODO: Add an h1 heading with the text "Registration Form" -->
-        
-        
+    <form action="#" method="POST">
+        <h1>Registration Form</h1>
+
         <!-- ========== PERSONAL INFORMATION SECTION ========== -->
-        <!-- TODO: Add an h2 heading with the text "Personal Information" -->
-        
-        
-        <!-- TODO: Create a label and input for First Name -->
-        <!-- Remember: label needs 'for' attribute, input needs 'type', 'id', and 'name' -->
-        
-        
-        
-        <!-- TODO: Create a label and input for Last Name -->
-        
-        
-        
-        <!-- TODO: Create a label and input for Street Address -->
-        
-        
-        
-        <!-- TODO: Create a label and input for City -->
-        
-        
-        
-        <!-- TODO: Create a label and input for State -->
-        
-        
-        
-        <!-- TODO: Create a label and input for Zip Code -->
-        
-        
-        
-        <!-- TODO: Create a label and input for Email Address -->
-        <!-- Remember: use type="email" for email inputs -->
-        
-        
-        
-        <!-- TODO: Create a label and input for Phone Number -->
-        <!-- Remember: use type="tel" for phone inputs -->
-        
-        
-        
+        <h2>Personal Information</h2>
+
+        <!-- First Name Input -->
+        <label for="firstName">First Name</label> 
+        <input type="textbox" name="firstName" id="firstName" placeholder="Your first name...">
+        <!-- Last Name Input -->
+        <label for="lastName">Last Name</label>
+        <input type="textbox" name="lastName" id="lastName" placeholder="Your last name...">
+        <!-- Street Address Input -->
+        <label for="address">Street Address</label>
+        <input type="textbox" name="address" id="address" placeholder="123 Main Street">
+        <!-- City/Town Input -->
+        <label for="city">City/Town</label>
+        <input type="textbox" name="city" id="city" placeholder="The city or town you live in...">
+        <!-- State Input -->
+        <label for="state">State</label>
+        <input type="textbox" name="state" id="state" placeholder="The state you live in...">
+        <!-- Zip Code Input -->
+        <label for="zip">Zip Code</label>
+        <input type="textbox" name="zip" id="zip" placeholder="12345">
+        <!-- Email Address Input -->
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" placeholder="name@email.com">
+        <!-- Phone Number Input -->
+        <label for="tel">Phone Number</label>
+        <input type="tel" name="tel" id="tel" placeholder="123-456-7890">
+
         <!-- ========== FAVORITE COLORS SECTION ========== -->
-        <!-- TODO: Add an h2 heading with the text "Favorite Colors" -->
-        
-        
-        <!-- TODO: Add a paragraph with instructions: "Select all colors you like (you may choose multiple):" -->
-        
-        
-        <!-- TODO: Create checkboxes for Blue, Red, Green, Yellow, Purple, Orange, and Indigo -->
-        <!-- Remember: 
-             - All checkboxes should have type="checkbox"
-             - All checkboxes should have the SAME name (e.g., name="favoriteColors")
-             - Each checkbox needs a unique id
-             - Each checkbox needs a value attribute
-             - Each checkbox needs a label with a matching 'for' attribute
-        -->
-        
-        <!-- Example for Blue (complete this, then create 6 more): -->
-        <!-- <input type="checkbox" id="colorBlue" name="favoriteColors" value="blue"> -->
-        <!-- <label for="colorBlue">Blue</label> -->
-        <!-- <br> -->
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        <h2>Favorite Colors</h2>
+        <p>Select all colors you like (you may choose multiple):</p>
+
+        <input type="checkbox" name="favoriteColors" id="blue" value="blue">
+        <label for="blue">Blue</label>
+        <br>
+        <input type="checkbox" name="favoriteColors" id="red" value="red">
+        <label for="red">Red</label>
+        <br>
+        <input type="checkbox" name="favoriteColors" id="green" value="green">
+        <label for="green">Green</label>
+        <br>
+        <input type="checkbox" name="favoriteColors" id="yellow" value="yellow">
+        <label for="yellow">Yellow</label>
+        <br>
+        <input type="checkbox" name="favoriteColors" id="purple" value="purple">
+        <label for="purple">Purple</label>
+        <br>
+        <input type="checkbox" name="favoriteColors" id="orange" value="orange">
+        <label for="orange">Orange</label>
+        <br>
+        <input type="checkbox" name="favoriteColors" id="indigo" value="indigo">
+        <label for="indigo">Indigo</label>
+        <br>
+
         <!-- ========== SCHOOL DISTRICT SECTION ========== -->
-        <!-- TODO: Add an h2 heading with the text "Home School District" -->
+        <h2>Home School District</h2>
+        <p>Select your home school district (choose one):</p>
         
-        
-        <!-- TODO: Add a paragraph with instructions: "Select your home school district (choose one):" -->
-        
-        
-        <!-- TODO: Create radio buttons for:
-             - Canton
-             - Potsdam
-             - Massena
-             - Norwood-Norfolk
-             - Parishville-Hopkinton
-             - Colton-Pierrepont
-             - Brasher Falls
-        -->
-        <!-- Remember: 
-             - All radio buttons should have type="radio"
-             - All radio buttons should have the SAME name (e.g., name="schoolDistrict")
-             - Each radio button needs a unique id
-             - Each radio button needs a value attribute
-             - Each radio button needs a label with a matching 'for' attribute
-        -->
-        
-        <!-- Example for Canton (complete this, then create 6 more): -->
-        <!-- <input type="radio" id="districtCanton" name="schoolDistrict" value="canton"> -->
-        <!-- <label for="districtCanton">Canton</label> -->
-        <!-- <br> -->
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        <input type="radio" id="districtCanton" name="schoolDistrict" value="canton">
+        <label for="districtCanton">Canton</label>
+        <br>
+        <input type="radio" id="districtPotsdam" name="schoolDistrict" value="potsdam">
+        <label for="districtPotsdam">Potsdam</label>
+        <br>
+        <input type="radio" id="districtMassena" name="schoolDistrict" value="massena">
+        <label for="districtMassena">Massena</label>
+        <br>
+        <input type="radio" id="districtNorwoodNorfolk" name="schoolDistrict" value="norwoodNorfolk">
+        <label for="districtNorwoodNorfolk">Norwood-Norfolk</label>
+        <br>
+        <input type="radio" id="districtParishvilleHopkinton" name="schoolDistrict" value="parishvilleHopkinton">
+        <label for="districtParishvilleHopkinton">Parishville-Hopkinton</label>
+        <br>
+        <input type="radio" id="districtColtonPierrepont" name="schoolDistrict" value="coltonPierrepont">
+        <label for="districtColtonPierrepont">Colton-Pierrepont</label>
+        <br>
+        <input type="radio" id="districtBrasher" name="schoolDistrict" value="brasher">
+        <label for="districtBrasher">Brasher Falls</label>
+        <br>
+
+        <!-- Grade Level Dropdown -->
+         <h2>Grade Level</h2>
+         <select name="gradeLevel">
+            <option value="9">9th Grade</option>
+            <option value="10">10th Grade</option>
+            <option value="11">11th Grade</option>
+            <option value="12">12th Grade</option>
+         </select>
+         <br>
+         <p> </p>
+         <hr>
         
         <!-- ========== SUBMIT BUTTON ========== -->
-        <!-- TODO: Add some space with <br><br> -->
+        <br>
+        <input type="submit" value="Submit Registration">
         
-        
-        <!-- TODO: Create a submit button -->
-        <!-- Use: <input type="submit" value="Submit Registration"> -->
-        
-        
-    <!-- TODO: Close your form element here -->
-    
+    </form>
 </body>
 </html>
